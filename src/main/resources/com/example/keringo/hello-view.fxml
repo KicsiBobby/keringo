@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.keringo.HelloController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: lightgrey;" />
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Start">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Button>
+            <Slider blockIncrement="2.0" max="11.0" min="1.0" value="1.0">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Slider>
+            <Label alignment="CENTER" text="Speed: 1" VBox.vgrow="ALWAYS" />
+            <Slider layoutX="10.0" layoutY="35.0" max="300.0" min="32.0" value="200.0" />
+            <Label alignment="TOP_CENTER" text="Radius: 200" />
+            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ball1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ball2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</HBox>
