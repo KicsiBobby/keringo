@@ -16,14 +16,14 @@
                   <Insets left="5.0" />
                </VBox.margin>
             </Button>
-            <Slider blockIncrement="2.0" max="11.0" min="1.0" value="1.0">
+            <Slider fx:id="sdSpeed" blockIncrement="2.0" max="11.0" min="1.0" onDragDetected="#onCsuszka" value="1.0">
                <padding>
                   <Insets top="5.0" />
                </padding>
             </Slider>
-            <Label alignment="CENTER" text="Speed: 1" VBox.vgrow="ALWAYS" />
-            <Slider layoutX="10.0" layoutY="35.0" max="300.0" min="32.0" value="200.0" />
-            <Label alignment="TOP_CENTER" text="Radius: 200" />
+            <Label fx:id="lbSpeed" alignment="CENTER" text="Speed: 1" VBox.vgrow="ALWAYS" />
+            <Slider fx:id="sdRadius" layoutX="10.0" layoutY="35.0" max="300.0" min="32.0" value="200.0" />
+            <Label fx:id="lbRadius" alignment="TOP_CENTER" text="Radius: 200" />
             <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@ball1.png" />
